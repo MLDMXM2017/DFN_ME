@@ -17,4 +17,9 @@ Then, you can run the command to run the DFN network:
 bash run_DFN.sh
 ```
 # Requirements
-The requirements of DFN can see the requirements.txt
+The requirements of DFN can see the requirements.txt  
+
+If you have suggestions or questions regarding this method, please reach out to lkhqz@xmu.edu.cn.
+
+Thank you for your interest and support.
+
