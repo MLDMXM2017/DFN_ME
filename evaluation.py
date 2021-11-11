@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 # @File    : evaluation.py
-# @Author  : smx
-# @Date    : 2019/11/29 
 # @Desc    : 
 import numpy as np
 import pandas as pd
