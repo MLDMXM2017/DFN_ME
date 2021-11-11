@@ -11,3 +11,9 @@ cd gcForest_master
 bash run_gcforest.sh
 ```
 
+## Run the DFN network for ME recognition
+Then, you can run the command to run the DFN network:
+```bash
+bash run_DFN.sh
+```
+
