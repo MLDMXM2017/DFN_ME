@@ -1,8 +1,4 @@
 # -*- coding: utf-8 -*-
-# @File    : Simple_CNN_6614.py
-# @Author  : smx
-# @Date    : 2019/11/18 
-# @Desc    : 现在的分数是71
 
 import numpy as np
 from keras import Input, Model
@@ -15,7 +11,7 @@ from keras.utils import to_categorical
 #from . import base_model
 
 
-'''class Simple_CNN(base_model.Base_Model):
+class Simple_CNN(base_model.Base_Model):
     def _build_graph(self):
 
         dim = 582
@@ -95,25 +91,3 @@ from keras.utils import to_categorical
             pred = self.model.predict([test_data1, test_data2, test_data3], batch_size=self.batch_size)
             pred = np.reshape(pred, (len(test_data1), -1))
             return pred
-'''
-
-input1 = Input(shape=(170, 140, 3), name='input1')
-input2 = Input(shape=(170, 140, 3), name='input2')
-
-initzer = RandomNormal(mean=0.0, stddev=0.01, seed=None)
-
-# first input
-x1 = Conv2D(32, kernel_size=(3, 3), strides=(1, 1), activation='relu', kernel_initializer=initzer,
-            bias_initializer='zeros', padding='same', name='x1_conv1')(input1)
-print(x1)
-x1 = MaxPooling2D(pool_size=(2, 2), strides=(3, 3), padding='same', name='x1_pool1')(x1)
-print(x1)
-x1 = Conv2D(32, kernel_size=(3, 3), strides=(1, 1), activation='relu', kernel_initializer=initzer,
-            bias_initializer='zeros', padding='same', name='x1_conv2')(x1)
-x1 = MaxPooling2D(pool_size=(2, 2), strides=(3, 3), padding='same', name='x1_pool2')(x1)
-
-
-# ====================================
-# concat
-#x = concatenate([x1, x2])
-#x = Flatten()(x)
